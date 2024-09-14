@@ -29,7 +29,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
         st.markdown(f"<h1 style='text-align: right;'>HI {get_greeting()}</h1>", unsafe_allow_html=True)
 
 
-    url_input = st.text_input("Enter a URL:")
+    url_input = st.text_input("Enter a URL:" , placeholder="Enter a valid URL to generate a cold email")
 
 
     submit_button = st.button("Submit")
