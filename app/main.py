@@ -17,18 +17,11 @@ def get_greeting():
         return "Good Evening"
 
 def create_streamlit_app(llm, portfolio, clean_text):
-
     col1, col2 = st.columns([0.7, 0.3])  
-
-
     with col1:
         st.title("🛒🛍️ SalesScribe AI")
-
-   
     with col2:
         st.markdown(f"<h1 style='text-align: right;'>HI {get_greeting()}</h1>", unsafe_allow_html=True)
-
-
     url_input = st.text_input("Enter a URL:" , placeholder="Enter a valid URL to generate a cold email")
 
 
