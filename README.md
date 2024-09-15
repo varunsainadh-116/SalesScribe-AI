@@ -10,7 +10,8 @@ Cold email generator for services company using groq, langchain and streamlit. I
 - SalesScribe is Software Development company can provide a dedicated software development engineer to company. So, the business development executive (Varun) from SalesScribe is going to reach out to Nike via a cold email.
 
 
-![img.png](images/Demoimg.png)
+![img.png](images/DemoImg.png)
+
 
 ## Architecture Diagram
 ![img.png](images/architecture.png)
