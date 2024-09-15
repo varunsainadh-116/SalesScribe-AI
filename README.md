@@ -1,10 +1,10 @@
-
+ 
 ## 📧 SalesScribe AI
 Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
 
 
 
-**Imagine a scenario:** 🔗 Links(https://salesscribe-ai.onrender.com/)
+**Imagine a scenario:** 🔗 [Website-Link](https://salesscribe-ai.onrender.com/)
 
 - A company needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
 - SalesScribe is Software Development company can provide a dedicated software development engineer to company. So, the business development executive (Varun) from SalesScribe is going to reach out to Nike via a cold email.
