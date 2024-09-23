@@ -4,7 +4,7 @@ Cold email generator for services company using groq, langchain and streamlit. I
 
 
 
-**Imagine a scenario:** 🔗 [Website-Link](https://salesscribe-ai.onrender.com/)
+**Imagine a scenario:** 🔗 [Website-Link](http://43.204.94.189:8501/)
 
 - A company needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
 - SalesScribe is Software Development company can provide a dedicated software development engineer to company. So, the business development executive (Varun) from SalesScribe is going to reach out to Nike via a cold email.
