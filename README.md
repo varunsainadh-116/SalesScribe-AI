@@ -6,7 +6,7 @@ Cold email generator for services company using groq, langchain and streamlit. I
 - A company needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
 - SalesScribe is Software Development company can provide a dedicated software development engineer to company. So, the business development executive (Varun) from SalesScribe is going to reach out to Nike via a cold email.
 
-
+## Demo Video
  https://github.com/user-attachments/assets/46e04360-2a49-4ff2-ab52-f4c804a97c23/ 
 
 
