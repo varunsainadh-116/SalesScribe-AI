@@ -5,28 +5,25 @@ from langchain_community.document_loaders import WebBaseLoader
 from chains import Chain
 from portfolio import Portfolio
 from utils import clean_text
+import time
 
-
-def get_greeting():
-    current_hour = datetime.now().hour
-    if current_hour < 12:
-        return "Good Morning"
-    elif 12 <= current_hour < 18:
-        return "Good Afternoon"
-    else:
-        return "Good Evening"
+def typingPrint(text):
+    placeholder = st.empty()  # Create a placeholder to update the text
+    typed_text = ""  # Empty string to hold the characters
+    for character in text:
+        typed_text += character
+        placeholder.markdown(f"<h1 style='text-align: right font-weight: 700;'>{typed_text}</h1>", unsafe_allow_html=True)
+        time.sleep(0.05)  # Simulate typing delay
 
 def create_streamlit_app(llm, portfolio, clean_text):
-    col1, col2 = st.columns([0.7, 0.3])  
+    col1, col2 = st.columns([0.7, 0.4])  
     with col1:
         st.title("🛒🛍️ SalesScribe AI")
     with col2:
-        st.markdown(f"<h1 style='text-align: right;'>HI {get_greeting()}</h1>", unsafe_allow_html=True)
-    url_input = st.text_input("Enter a URL:" , placeholder="Enter a valid URL to generate a cold email")
-
-
+        typingPrint("Let AI Lead the Way!")  # Use the typingPrint function
+    
+    url_input = st.text_input("Enter a URL:", placeholder="Enter a valid URL to generate a cold email")
     submit_button = st.button("Submit")
-
 
     if submit_button:
         if url_input:
@@ -53,7 +50,6 @@ if __name__ == "__main__":
     chain = Chain()
     portfolio = Portfolio()
     
-
     st.set_page_config(layout="wide", page_title="🛒🛍️ SalesScribe AI", page_icon="🛒🛍️")
     
     create_streamlit_app(chain, portfolio, clean_text)
