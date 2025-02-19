@@ -9,7 +9,7 @@ load_dotenv()
 
 class Chain:
     def __init__(self):
-        self.llm = ChatGroq(temperature=0, groq_api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.1-70b-versatile")
+        self.llm = ChatGroq(temperature=0, groq_api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.3-70b-versatile")
 
     def extract_jobs(self, cleaned_text):
         prompt_extract = PromptTemplate.from_template(
@@ -45,7 +45,7 @@ class Chain:
             process optimization, cost reduction, and heightened overall efficiency. 
             Your job is to write a cold email to the client regarding the job mentioned above describing the capability of SalesScribe  
             in fulfilling their needs.
-            Also add the most relevant ones from the following links to showcase Atliq's portfolio: {link_list}
+            Also add the most relevant ones from the following links to showcase Company's portfolio: {link_list}
             Remember you are varun, BDE at SalesScribe . 
             Do not provide a preamble.
             ### EMAIL (NO PREAMBLE):
