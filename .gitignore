@@ -10,6 +10,8 @@ __pycache__/
 
 Ec2ssh/
 
+# dcoker ignore
+.dockerignore
 
 # Distribution / packaging
 .Python
