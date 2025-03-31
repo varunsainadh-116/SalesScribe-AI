@@ -5,6 +5,11 @@ __pycache__/
 
 app/.env
 
+
+Ec2.txt
+my_api.txt
+
+
 # C extensions
 *.so
 
