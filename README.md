@@ -13,7 +13,7 @@ Cold email generator for services company using groq, langchain and streamlit. I
 ![img.png](images/DemoImg.png)
 
 
-## Architecture Diagram
+## Workflow Diagram
 ![img.png](images/architecture.png)
 
 ## Set-up

@@ -3,7 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-.env
+app/.env
+
+
+Ec2.txt
+my_api.txt
+
 
 # C extensions
 *.so
