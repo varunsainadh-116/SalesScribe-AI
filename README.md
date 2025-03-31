@@ -12,6 +12,8 @@ Cold email generator for services company using groq, langchain and streamlit. I
 
 ![img.png](images/DemoImg.png)
 
+## AWS Architecture
+![img.png](images/SalesScribe.png)
 
 ## Workflow Diagram
 ![img.png](images/architecture.png)
@@ -19,13 +21,25 @@ Cold email generator for services company using groq, langchain and streamlit. I
 ## Set-up
 1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
 
+2. Clone the Project via Git
 
-2. To get started, first install the dependencies using:
+   Option 1: Clone via Git
+   ```bash
+   git clone https://github.com/varunsainadh-116/SalesScribe-AI.git
+   ```
+
+   Option 2: Clone via Docker Image
+   ```commandline
+   docker pull varunsainadh/salesscribe-ai
+
+    ```
+       
+4. To get started, first install the dependencies using:
     ```commandline
      pip install -r requirements.txt
     ```
    
-3. Run the streamlit app:
+5. Run the streamlit app:
    ```commandline
    streamlit run app/main.py
    ```
