@@ -5,7 +5,8 @@ __pycache__/
 
 app/.env
 
-
+.dockerignore
+*.DS_Store
 Ec2.txt
 my_api.txt
 
